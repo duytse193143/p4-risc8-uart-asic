@@ -8,6 +8,7 @@ floorplan, placement, CTS, routing, DRC, LVS and GDSII — using only open-sourc
 After reset the chip prints `OK!` on `uart_tx`, then echoes every byte it receives on `uart_rx`.
 
 **Result: `P4 SIGNOFF: ALL TARGETS MET`**
+📄 **Full project report:** [docs/Project4_RISC8_UART_ASIC_Report_TranDuy.pdf](docs/Project4_RISC8_UART_ASIC_Report_TranDuy.pdf)
 
 ---
 
