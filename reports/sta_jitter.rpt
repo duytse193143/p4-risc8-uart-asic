@@ -1,0 +1,24 @@
+
+=== 1. Baseline: our SDC (uncertainty 0.25 ns) ===
+uncertainty 0.25 (SDC)     setup WNS   1.313  TNS    0.000 | hold WNS   0.115  TNS    0.000 | MET
+
+=== 2. Add jitter to SETUP checks (period 5 ns) ===
+setup uncertainty 0.00     setup WNS   1.563  TNS    0.000 | hold WNS   0.115  TNS    0.000 | MET
+setup uncertainty 0.25     setup WNS   1.313  TNS    0.000 | hold WNS   0.115  TNS    0.000 | MET
+setup uncertainty 0.50     setup WNS   1.063  TNS    0.000 | hold WNS   0.115  TNS    0.000 | MET
+setup uncertainty 0.75     setup WNS   0.813  TNS    0.000 | hold WNS   0.115  TNS    0.000 | MET
+setup uncertainty 1.00     setup WNS   0.563  TNS    0.000 | hold WNS   0.115  TNS    0.000 | MET
+setup uncertainty 1.25     setup WNS   0.313  TNS    0.000 | hold WNS   0.115  TNS    0.000 | MET
+setup uncertainty 1.50     setup WNS   0.063  TNS    0.000 | hold WNS   0.115  TNS    0.000 | MET
+setup uncertainty 2.00     setup WNS  -0.437  TNS  -82.617 | hold WNS   0.115  TNS    0.000 | VIOLATED
+
+=== 3. Add uncertainty to HOLD checks ===
+hold uncertainty 0.00      setup WNS   1.313  TNS    0.000 | hold WNS   0.365  TNS    0.000 | MET
+hold uncertainty 0.10      setup WNS   1.313  TNS    0.000 | hold WNS   0.265  TNS    0.000 | MET
+hold uncertainty 0.25      setup WNS   1.313  TNS    0.000 | hold WNS   0.115  TNS    0.000 | MET
+hold uncertainty 0.35      setup WNS   1.313  TNS    0.000 | hold WNS   0.015  TNS    0.000 | MET
+hold uncertainty 0.40      setup WNS   1.313  TNS    0.000 | hold WNS  -0.035  TNS   -0.035 | VIOLATED
+hold uncertainty 0.50      setup WNS   1.313  TNS    0.000 | hold WNS  -0.135  TNS   -0.473 | VIOLATED
+
+=== 4. Remove the extra jitter: back to the SDC value ===
+uncertainty 0.25 (SDC)     setup WNS   1.313  TNS    0.000 | hold WNS   0.115  TNS    0.000 | MET

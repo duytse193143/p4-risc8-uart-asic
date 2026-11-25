@@ -1,0 +1,19 @@
+{
+    "DESIGN_NAME": "risc8_uart_top",
+    "VERILOG_FILES": "dir::src/*.v",
+
+    "CLOCK_PORT": "clk",
+    "CLOCK_PERIOD": 5,
+    "PNR_SDC_FILE": "dir::constraints/risc8_uart.sdc",
+    "SIGNOFF_SDC_FILE": "dir::constraints/risc8_uart.sdc",
+
+    "FP_CORE_UTIL": 60,
+
+    "PDN_VOFFSET": 5,
+    "PDN_HOFFSET": 5,
+    "PDN_VWIDTH": 2,
+    "PDN_HWIDTH": 2,
+    "PDN_VPITCH": 30,
+    "PDN_HPITCH": 30,
+    "PDN_SKIPTRIM": true
+}

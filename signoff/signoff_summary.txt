@@ -1,0 +1,23 @@
+
+Signoff summary for runs/RUN_2026-11-25_14-59-36  (timing at 'tt' corners)
+--------------------------------------------------------------
+Setup worst slack (ns)            0.852   target >= 0      PASS
+Setup TNS (ns)                    0.000   target = 0       PASS
+Hold worst slack (ns)             0.308   target >= 0      PASS
+Hold TNS (ns)                     0.000   target = 0       PASS
+Clock skew, real (ns)             0.032   target <= 0.100  PASS
+Routing DRC errors                0.000   target = 0       PASS
+Magic DRC errors                  0.000   target = 0       PASS
+KLayout DRC errors                0.000   target = 0       PASS
+LVS errors                        0.000   target = 0       PASS
+Antenna violating nets            0.000   target = 0       PASS
+--------------------------------------------------------------
+For information, 'ss' corners: setup WNS -2.758 ns, hold WNS 0.345 ns
+--------------------------------------------------------------
+Instances                          3520
+Core area (um^2)                27705.3
+Utilization                    0.864065
+Die box (um)               0.0 0.0 178.46 189.18
+--------------------------------------------------------------
+P4 SIGNOFF: ALL TARGETS MET
+GDSII: runs/RUN_2026-11-25_14-59-36/final/gds/risc8_uart_top.gds

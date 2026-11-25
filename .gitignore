@@ -1,0 +1,5 @@
+runs/
+sim/
+lib/
+scripts/signoff_summary
+*.vcd
